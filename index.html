@@ -9,9 +9,15 @@
 
 <body>
 
+  <h1>Biased-Science Repository (Prototype)</h1>
+  <div id="bs-table"></div>
+  
   <script type="text/javascript">
-    // define data - paste from Google spreadsheet column L "JSON export"
-var tabledata = [
+
+    TableLoader.register("prototype", function(){
+
+      // define data - paste from Google spreadsheet column L, "JSON export"
+      var tabledata = [
 {Group:1, Title:"Impact of population mixing between vaccinated and unvaccinated subpopulations on infectious disease dynamics: implications for SARS-CoV-2 transmission", Author:"David N. Fisman, Afia Amoako, and Ashleigh R. Tuite", Date:"44676", Source:"Canadian Medical Association Journal", Type:"BS Article", Method/Flaw:"Compartmental Model", Key conclusion:"Unvaccinated individuals have a higher risk of infection and contribute to infecting those who are vaccinated at a high rate.", URL:"https://www.cmaj.ca/content/194/16/E573" }, 
 {Group:1, Title:"Error in key model input", Author:"Richard Schabas", Date:"44732", Source:"Canadian Medical Association Journal", Type:"Response", Method/Flaw:"Model Parameters", Key conclusion:"The key input for the model has issues pertaining to a lack of data, accuracy, and reference.", URL:"https://www.cmaj.ca/content/194/24/E846" }, 
 {Group:1, Title:"Study authors don’t consider waning SARS-CoV-2 immunity after vaccination in their model", Author:"James C. Doidge, Alex de Figueiredo, Trudo Lemmens, and Kevin Bardosh", Date:"44732", Source:"Canadian Medical Association Journal", Type:"Response", Method/Flaw:"Model Parameters", Key conclusion:"The results are predetermined by the choice of model, parameters, and omission of waning immunity.", URL:"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9261953/" }, 
@@ -133,7 +139,7 @@ var tabledata = [
 {Group:19, Title:"Where are the overall mortality data?", Author:"Reimar Fritzen", Date:"44553", Source:"New England Journal of Medicine", Type:"Comment", Method/Flaw:"Additional Analysis Required", Key conclusion:"Additional analysis is requested for booster effectiveness when considering all cause mortality.", URL:"https://www.nejm.org/doi/full/10.1056/NEJMoa2115624#article_comments" }, 
 {Group:19, Title:"Effectiveness of a third dose of the BNT162b2 Vaccine", Author:"Prem raj Pushpakaran ", Date:"44556", Source:"New England Journal of Medicine", Type:"Comment", Method/Flaw:"Additional Data", Key conclusion:"Additional longer-term data for the safety of boosters is required to have a better understanding on their effectiveness, especially for immuno-compromised individuals or those with underlying illnesses.", URL:"https://www.nejm.org/doi/full/10.1056/NEJMoa2115624#article_comments" }, 
 {Group:19, Title:"and after ?", Author:"Marta Salvi ", Date:"44558", Source:"New England Journal of Medicine", Type:"Comment", Method/Flaw:"Additional Analysis Required", Key conclusion:"An inquiry is made pertaining to longer-term health outcomes after receiving the booster.", URL:"https://www.nejm.org/doi/full/10.1056/NEJMoa2115624#article_comments" }, 
-  ];
+      ];
 
 //define table
 var table = new Tabulator("#bs-table", {
@@ -141,10 +147,8 @@ var table = new Tabulator("#bs-table", {
     autoColumns:true,
 });
 
+    })
   </script>
 
-  <h1>Biased-Science Repository (Prototype)</h1>
-  <div id="bs-table"></div>
-  
 </body>
 </html>

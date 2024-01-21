@@ -3,16 +3,25 @@
   <head>
     <title>RECOVER19 | Biased-Science Repository</title>
     <meta name="author" content="Claus Rinner">
-    <script type="text/javascript" src="tabulator.js"></script>
+
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" class="init">
+	bs_repo.init({
+		jquery: function () {
+			$('#bs-table').DataTable();
+		},
+		vanilla: function () {
+			new DataTable('#bs-table');
+		}
+	});
+	</script>
+
   </head>
 
   <body>
 
     <h1>Biased-Science Repository (Prototype)</h1>
-
-    <script type="text/javascript">
-	new DataTable('#bs-table'); 
-    </script>
 
 <table id="bs-table" class="display" style="width:100%">
         <thead>
@@ -20,6 +29,10 @@
         <tbody>
 <tr><td>1</td><td>Impact of population mixing between vaccinated and unvaccinated subpopulations on infectious disease dynamics: implications for SARS-CoV-2 transmission</td><td>David N. Fisman, Afia Amoako, and Ashleigh R. Tuite</td><td>44676</td><td>Canadian Medical Association Journal</td><td>BS Article</td><td>Compartmental Model</td><td>Unvaccinated individuals have a higher risk of infection and contribute to infecting those who are vaccinated at a high rate.</td><td>https://www.cmaj.ca/content/194/16/E573</td></tr>
   	</tbody>
+
+    <script type="text/javascript">
+	$().DataTable('#bs-table'); 
+    </script>
 
   </body>
 </html>

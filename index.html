@@ -143,7 +143,10 @@
 	</tbody>
 
     <script type="text/javascript">
-	$('#bs-table').DataTable(); 
+	$('#bs-table').DataTable({
+		lengthMenu: [ [10, 25, 50, -1], [10, 25, 50, 'All'] ]; 
+		perPage: 100;
+	}); 
     </script>
 
   </body>

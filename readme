@@ -1,8 +1,8 @@
-The Biased-Science (BS) Repository, an initiative of the RECOVER19 project.
+### The Biased-Science (BS) Repository, an initiative of the RECOVER19 project ###
 
 We are collecting published articles that have influenced COVID-19 pandemic decision-making, along with responses, critiques, and debunks that should get more attention in the media and public debates. 
-The data are currently collected in a Google spreadsheet; contact crinner at torontomu dot ca for questions, access, or opportunities to collaborate. 
+The data are currently collected in a Google spreadsheet; contact crinner at torontomu dot ca for questions, access, and opportunities to collaborate. 
 
 The https://crinner.github.io/bs-repository/ web site (index.html page in this github repo) uses JQuery DataTables to enable filter/search and sorting in the BS Repository. 
 
-More information about the underlying research project can be found at https://recover19.org/. 
+More information about the underlying research project can be found at [https://recover19.org/](https://recover19.org/). 
